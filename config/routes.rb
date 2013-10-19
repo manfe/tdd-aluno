@@ -1,4 +1,8 @@
 Demo::Application.routes.draw do
+  resources :alunos
+
+  root 'alunos#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

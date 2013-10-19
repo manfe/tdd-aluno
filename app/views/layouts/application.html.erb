@@ -7,8 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="row">
+    <div class="large-12 columns">
+      <nav class="top-bar">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="#">Especialização em Desenvolvimento Web - Instituto Federal Catarinense - Mauricio Natanael Ferreira</a></h1>
+          </li>          
+        </ul>
+      </nav>      
+    </div>
+  </div>
+    
+  <div class="row">
+    <div class="large-12 columns">
+      <hr />
+      <%= yield %>
+    </div>    
+  </div>
 </body>
 </html>

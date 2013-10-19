@@ -1,0 +1,29 @@
+<h1>Listagem de Alunos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @alunos.each do |aluno| %>
+      <tr>
+        <td><%= aluno.nome %></td>
+        <td><%= aluno.idade %></td>
+        <td><%= link_to 'Exibir', aluno %></td>
+        <td><%= link_to 'Editar', edit_aluno_path(aluno) %></td>
+        <td><%= link_to 'Deletar', aluno, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Aluno', new_aluno_path, class: 'button' %>
