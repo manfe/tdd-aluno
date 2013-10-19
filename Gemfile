@@ -39,7 +39,8 @@ end
 
 group :production do
   # database in production
-  gem 'pg'  
+  gem 'pg'
+  gem 'rails_12factor' # to work assets precompile on heroku  
 end
 
 # Use ActiveModel has_secure_password
